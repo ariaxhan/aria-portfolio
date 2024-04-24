@@ -42,7 +42,7 @@ export const links = () => {
 export const meta = () => {
   return baseMeta({
     title: 'Designer + Developer',
-    description: `Design portfolio of ${config.name} — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
+    description: `Design portfolio of ${config.name} — a cybersecurity enthusiast and software engineer student.`,
   });
 };
 
@@ -103,8 +103,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="A custom playlist generator based on mood"
+        description="Using the Spotify API to generate Spotify playlists using mood and tempo data from songs"
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{
