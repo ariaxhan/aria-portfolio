@@ -4,7 +4,7 @@
 
 # Aria's Portfolio Website
 
-Hi there! Welcome to my portfolio. Here, I'll be sharing my skills and projects in the field of Software Development. <br/>
+Hi there! Welcome to my portfolio. Here, I'll be sharing my skills and projects in the field of Computer Science. <br/>
 
 <h1 align="center">Personal portfolio</h1>
 
@@ -54,7 +54,7 @@ npm run deploy
 - **Single Page Portfolio:** Designed for effortless navigation, it houses various sections, such as:
     - **Projects:** A comprehensive display of my key projects, demonstrating my technical skills and creativity.
     - **About:** An in-depth profile providing insights into my background and interests. This section also includes a link to my **Resume**.
-    - **Uses:**: A rundown of the technologies I use, including programming languages, libraries, frameworks, and platforms.
+    - **Uses:** A rundown of the technologies I use, including programming languages, libraries, frameworks, and platforms.
     - **Contact:** A section to connect with me for potential collaborations, job opportunities, or any other inquiries.
 
 - **Icons Integration:** Sprinkled throughout the site are icons integrated with [`react-icons`](https://react-icons.github.io/react-icons/) adding visual flair and aiding navigation.
