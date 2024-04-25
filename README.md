@@ -8,9 +8,9 @@ Hi there! Welcome to my portfolio. Here, I'll be sharing my skills and projects 
 
 <h1 align="center">Personal portfolio</h1>
 
-## A Peek at the Website
+## A Peek at the Website!
 
-![image](https://github.com/ariaxhan/aria-portfolio/app/assets/portfolio.jpg)
+![image](https://github.com/ariaxhan/aria-portfolio/assets/113392746/5bb665f3-4496-4d08-8f1e-fe94d3eeee49)
 
 Built with [Remix](https://remix.run/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). 
 
