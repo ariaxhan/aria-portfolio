@@ -1,4 +1,4 @@
-import profileImgLarge from '~/assets/profile-large.jpg';
+
 import profileImgPlaceholder from '~/assets/profile-placeholder.jpg';
 import profileImg from '~/assets/aria.jpg';
 import { Button } from '~/components/button';
@@ -12,7 +12,6 @@ import { Text } from '~/components/text';
 import { Transition } from '~/components/transition';
 import { Fragment, useState } from 'react';
 import { media } from '~/utils/style';
-import katakana from './katakana.svg';
 import styles from './profile.module.css';
 
 const ProfileText = ({ visible, titleId }) => (
