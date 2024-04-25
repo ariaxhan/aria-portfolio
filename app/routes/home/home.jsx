@@ -4,12 +4,11 @@ import gamestackTexture2 from '~/assets/gamestack-list.jpg';
 import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from '~/assets/gamestack-login.jpg';
-import sliceTextureLarge from '~/assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceTexture from '~/assets/slice-app.jpg';
-import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
+
+import blockchainTexture from '~/assets/blockchain.png';
+import melodyTexture from '~/assets/moodishmelodies.png';
+import bookBlogTexture from '~/assets/bookblog.png';
+
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -104,61 +103,85 @@ export const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="A custom playlist generator based on mood"
-        description="Using the Spotify API to generate Spotify playlists using mood and tempo data from songs"
+        description="Used the Spotify API to generate Spotify playlists using mood and tempo data from songs"
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="https://github.com/ariaxhan/MoodishMelodiesJS"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'Custom playlist generator',
           textures: [
             {
-              srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
-              placeholder: sprTexturePlaceholder,
+              srcSet: `${melodyTexture} 1280w, ${melodyTexture} 2560w`,
+              placeholder: melodyTexture,
             },
           ],
         }}
       />
+
       <ProjectSummary
         id="project-2"
         alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
-        index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        index={1}
+        title="A blockchain built with Python"
+        description="Created a blockchain with Python and Flask, implementing css, html, and javascript for the front-end"
+        buttonText="View project"
+        buttonLink="https://github.com/ariaxhan/customBlockchain"
         model={{
-          type: 'phone',
-          alt: 'App login screen',
+          type: 'laptop',
+          alt: 'Python Blockchainr',
           textures: [
             {
-              srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: `${gamestackTexture2} 375w, ${gamestackTexture2Large} 750w`,
-              placeholder: gamestackTexture2Placeholder,
+              srcSet: `${blockchainTexture} 1280w, ${blockchainTexture} 2560w`,
+              placeholder: blockchainTexture,
             },
           ],
         }}
       />
+
+
+      {/*<ProjectSummary*/}
+      {/*  id="project-2"*/}
+      {/*  alternate*/}
+      {/*  sectionRef={projectTwo}*/}
+      {/*  visible={visibleSections.includes(projectTwo.current)}*/}
+      {/*  index={2}*/}
+      {/*  title="Video game progress tracking"*/}
+      {/*  description="Design and development for a video game tracking app built in React Native"*/}
+      {/*  buttonText="View website"*/}
+      {/*  buttonLink="https://gamestack.hamishw.com"*/}
+      {/*  model={{*/}
+      {/*    type: 'phone',*/}
+      {/*    alt: 'App login screen',*/}
+      {/*    textures: [*/}
+      {/*      {*/}
+      {/*        srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,*/}
+      {/*        placeholder: gamestackTexturePlaceholder,*/}
+      {/*      },*/}
+      {/*      {*/}
+      {/*        srcSet: `${gamestackTexture2} 375w, ${gamestackTexture2Large} 750w`,*/}
+      {/*        placeholder: gamestackTexture2Placeholder,*/}
+      {/*      },*/}
+      {/*    ],*/}
+      {/*  }}*/}
+      {/*/>*/}
       <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Horror book blog with Astro"
+        description="Created a personal book blog about horror novels using Astro, a static site generator for modern web development, and tailwindcss for lightweight styling"
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="https://github.com/ariaxhan/sanity-books"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Sanity book blog for horror enthusiasts',
           textures: [
             {
-              srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
-              placeholder: sliceTexturePlaceholder,
+              srcSet: `${bookBlogTexture} 800w, ${bookBlogTexture} 1920w`,
+              placeholder: bookBlogTexture,
             },
           ],
         }}

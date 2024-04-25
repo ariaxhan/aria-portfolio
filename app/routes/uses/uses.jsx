@@ -1,9 +1,7 @@
 import usesBackgroundPlaceholder from '~/assets/uses-background-placeholder.jpg';
 import usesBackground from '~/assets/uses-background.mp4';
 import { Footer } from '~/components/footer';
-import { Link } from '~/components/link';
 import { List, ListItem } from '~/components/list';
-import { Table, TableBody, TableCell, TableHeadCell, TableRow } from '~/components/table';
 import {
   ProjectBackground,
   ProjectContainer,
@@ -35,31 +33,34 @@ export const Uses = () => {
         />
         <ProjectHeader
           title="Uses"
-          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things. And yeah, that is a Johnny Mnemonic GIF in the background."
+          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to build and code things."
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
-              <ProjectSectionHeading>Design</ProjectSectionHeading>
+              <ProjectSectionHeading>Coding Languages</ProjectSectionHeading>
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    <Link href="https://www.figma.com">Figma</Link> is my primary tool for
-                    UI design these days. Made the switch from Sketch in 2020 and haven’t
-                    looked back. I’ve also created{' '}
-                    <Link href="https://www.figma.com/@hamish">a few plugins</Link> that
-                    you can install.
+                    <b> Java </b>: coding language that I am most familiar with. I've used it to create an elevator simulation program and am now building a multi-threaded custom search engine.
                   </ListItem>
                   <ListItem>
-                    Any motion graphics I create are created in Adobe After Effects. So
-                    far I haven’t found a non-Adobe product that’s as good. If anyone has
-                    suggestions please <Link href="/contact">message me</Link>.
+                    <b> Python </b>: my first coding language and remains a top choice. I recently made a blockchain from scratch using Python.
                   </ListItem>
                   <ListItem>
-                    For any 3D models and video editing I use{' '}
-                    <Link href="https://www.blender.org/">Blender</Link>. Since 2.8 it’s
-                    become way simpler to use and in a lot of ways better than expensive
-                    paid tools like 3DS Max or Maya.
+                    <b> C </b>: another language that I am quite familiar with. I designed my own socket and basic http server using C, as well as a RISC-V simulator.
+                  </ListItem>
+                  <ListItem>
+                    <b> Javascript/Typescript </b>: I've used Javascript to create a simple web app that uses the Spotify API to analyze the mood of a song, and I've worked with both Javascript and Typescript in multiple web frameworks including React and Vue.js.
+                  </ListItem>
+                  <ListItem>
+                    <b> R </b>: I used R for data analysis and visualization in RStudio. I've created a project that analyzes the lyrics of all of the songs from the K-pop group Blackpink and analyzes them.
+                  </ListItem>
+                  <ListItem>
+                    <b> HTML/CSS </b>: I've used HTML/CSS to create multiple webpages and have a good understanding of both.
+                  </ListItem>
+                  <ListItem>
+                    <b> SQL </b>: I've used SQL to create and manage databases.
                   </ListItem>
                 </List>
               </ProjectSectionText>
@@ -73,90 +74,24 @@ export const Uses = () => {
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    I use <Link href="https://vscodium.com/">VSCodium</Link> as my text
-                    editor, with the Tokyo Night theme and Operator Mono as my typeface of
-                    choice.
+                    <b> Unity </b>: I've used Unity to create a simple game where the player climbs a pyramid collecting coins.
                   </ListItem>
                   <ListItem>
-                    Firefox is my main browser for both development and general use.
+                    <b> React </b>: I've made several webpages with React, including this one!
                   </ListItem>
                   <ListItem>
-                    <Link href="https://reactjs.org/">React</Link> is my front end
-                    Javascript library of choice. The component-centric mental model is
-                    the first thing that truly made sense to me as a designer.
+                    <b> Vue.js </b>: I've worked with Vue.js quite a bit, especially by converting a webpage from Vue.js to React, which required a deep understanding of both frameworks.
                   </ListItem>
                   <ListItem>
-                    For 3D effects and image shaders I use{' '}
-                    <Link href="https://threejs.org/">three.js</Link>. It has a bit of a
-                    learning curve but you can do some really powerful stuff with it.
-                  </ListItem>
-                  <ListItem>
-                    For CSS I’ve used a myriad pre-processors and css-in-js solutions like
-                    styled-components, but these days I’m using vanilla CSS with{' '}
-                    <Link href="https://postcss.org/">PostCSS</Link> to get upcoming CSS
-                    features today.
-                  </ListItem>
-                  <ListItem>
-                    For Javascript animations I use{' '}
-                    <Link href="https://www.framer.com/motion/">Framer Motion</Link>, it’s
-                    a great way to add spring animations to React and three.js.
-                  </ListItem>
-                  <ListItem>
-                    For building and testing UI components in isolation I use{' '}
-                    <Link href="https://storybook.js.org/">Storybook</Link>. Check out the{' '}
-                    <Link href="https://storybook.hamishw.com">
-                      storybook for this website
-                    </Link>
-                    .
+                    <b> Flask </b>: I used Flask to create a blockchain from scratch.
                   </ListItem>
                 </List>
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
-        <ProjectSection padding="none" className={styles.section}>
-          <ProjectSectionContent>
-            <ProjectTextRow stretch width="m">
-              <ProjectSectionHeading>Hardware</ProjectSectionHeading>
-              <Table>
-                <TableBody>
-                  <TableRow>
-                    <TableHeadCell>Desktop</TableHeadCell>
-                    <TableCell>Custom built</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Operating system</TableHeadCell>
-                    <TableCell>Arch Linux (by the way)</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Monitor</TableHeadCell>
-                    <TableCell>1440p IPS 144hz LG 27GL850</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Keyboard</TableHeadCell>
-                    <TableCell>Tofu65</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Mouse</TableHeadCell>
-                    <TableCell>Logitech G403</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Laptop</TableHeadCell>
-                    <TableCell>Macbook Pro 14″</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Headphones</TableHeadCell>
-                    <TableCell>Audio Technica ATH-M50x/Apple Airpods</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Microphone</TableHeadCell>
-                    <TableCell>Blue Yeti</TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
-            </ProjectTextRow>
-          </ProjectSectionContent>
-        </ProjectSection>
+
+        ... and I am always learning more!
       </ProjectContainer>
       <Footer />
     </>
