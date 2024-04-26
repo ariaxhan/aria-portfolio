@@ -43,8 +43,6 @@ npm run deploy
 
 - [Features](#features)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [Feedback and Suggestions](#feedback-and-suggestions)
 - [Credits](#credits)
 
 ## Features
@@ -53,11 +51,8 @@ npm run deploy
 
 - **Single Page Portfolio:** Designed for effortless navigation, it houses various sections, such as:
     - **Projects:** A comprehensive display of my key projects, demonstrating my technical skills and creativity.
-    - **About:** An in-depth profile providing insights into my background and interests. This section also includes a link to my **Resume**.
-    - **Uses:** A rundown of the technologies I use, including programming languages, libraries, frameworks, and platforms.
-    - **Contact:** A section to connect with me for potential collaborations, job opportunities, or any other inquiries.
-
-- **Icons Integration:** Sprinkled throughout the site are icons integrated with [`react-icons`](https://react-icons.github.io/react-icons/) adding visual flair and aiding navigation.
+    - **Details:** An in-depth profile providing insights into my background and interests. This section also includes my contact information.
+    - **Skills & Tools:** A rundown of the technologies I use, including programming languages, libraries, frameworks, and platforms.
 
 ## Usage
 Feel free to explore around to get a feel for my skills and projects. Navigate seamlessly through the pages using the provided navigation bar. If you find the site helpful, consider giving this repository a star to show your appreciation.
