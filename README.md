@@ -14,7 +14,7 @@ Hi there! Welcome to my portfolio. Here, I'll be sharing my skills and projects 
 
 Built with [Remix](https://remix.run/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). 
 
-View the [live site](https://aria-portfolio.pages.dev/)
+View the [live site](https://ariaxhan.com/)
 
 ## Install & run
 
