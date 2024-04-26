@@ -33,8 +33,8 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'Designer + Developer',
-    description: `Design portfolio of ${config.name} — a cybersecurity enthusiast and software engineer student.`,
+    title: 'Software Engineer + Cybersecurity Enthusiast',
+    description: `Portfolio of ${config.name} — a cybersecurity enthusiast and software engineer student.`,
   });
 };
 
@@ -90,6 +90,11 @@ export const Home = () => {
         sectionRef={intro}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+      <Profile
+        sectionRef={details}
+        visible={visibleSections.includes(details.current)}
+        id="details"
+      />
       <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
@@ -133,32 +138,6 @@ export const Home = () => {
         }}
       />
 
-
-      {/*<ProjectSummary*/}
-      {/*  id="project-2"*/}
-      {/*  alternate*/}
-      {/*  sectionRef={projectTwo}*/}
-      {/*  visible={visibleSections.includes(projectTwo.current)}*/}
-      {/*  index={2}*/}
-      {/*  title="Video game progress tracking"*/}
-      {/*  description="Design and development for a video game tracking app built in React Native"*/}
-      {/*  buttonText="View website"*/}
-      {/*  buttonLink="https://gamestack.hamishw.com"*/}
-      {/*  model={{*/}
-      {/*    type: 'phone',*/}
-      {/*    alt: 'App login screen',*/}
-      {/*    textures: [*/}
-      {/*      {*/}
-      {/*        srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,*/}
-      {/*        placeholder: gamestackTexturePlaceholder,*/}
-      {/*      },*/}
-      {/*      {*/}
-      {/*        srcSet: `${gamestackTexture2} 375w, ${gamestackTexture2Large} 750w`,*/}
-      {/*        placeholder: gamestackTexture2Placeholder,*/}
-      {/*      },*/}
-      {/*    ],*/}
-      {/*  }}*/}
-      {/*/>*/}
       <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
@@ -179,11 +158,7 @@ export const Home = () => {
           ],
         }}
       />
-      <Profile
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
-      />
+
       <Footer />
     </div>
   );

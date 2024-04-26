@@ -20,12 +20,24 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Aria, currently I live in San Francisco, entering my final year as a Computer Science major at the University of San Francisco.
-      My projects include webpages, a custom blockchain, a Java search engine, and more. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to read, travel, do yoga, and go on picnics. Please feel free to reach out and connect!
+      Hi, I'm Aria! I'm a Computer Science student at the University of San Francisco, and I'm fascinated by the
+      intersection of software development, data privacy, and cybersecurity. I'm on track to graduate in May 2025, and
+      I'm eager to apply my skills and knowledge in real-world settings. Currently I'm looking for an internship for
+      Summer 2024 or Winter 2024.
+      <br /> <br />
+      My projects, such as a custom Python blockchain, Java-based search engine and a Spotify-integrated web app, reflect my ability to turn data
+      into creative, user-centric solutions. Check out my <Link href="https://github.com/ariaxhan">Github</Link> to see
+      everything I've built, and if you’re interested in the coding languages and platforms I use, take a look at
+      my <Link href="/uses">Skills &
+      Tools</Link> page.
+      <br /> <br />
+      I'm excited about opportunities where I can merge my technical abilities, creative thinking, and passion for
+      software engineering and cybersecurity. Please feel free to reach out and connect!
+      <br />
+      <br />
+      Email me at <Link href="mailto:ariaxhan@gmail.com">ariaxhan@gmail.com</Link> or check out my <Link
+      href="https://www.linkedin.com/in/ariahan/">LinkedIn</Link> for more information.
+      <br /> <br />
     </Text>
   </Fragment>
 );
@@ -50,15 +62,6 @@ export const Profile = ({ id, visible, sectionRef }) => {
           <div className={styles.content} ref={nodeRef}>
             <div className={styles.column}>
               <ProfileText visible={visible} titleId={titleId} />
-              <Button
-                secondary
-                className={styles.button}
-                data-visible={visible}
-                href="/contact"
-                icon="send"
-              >
-                Contact me
-              </Button>
             </div>
             <div className={styles.column}>
               <div className={styles.tag} aria-hidden>
