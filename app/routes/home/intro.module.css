@@ -129,9 +129,20 @@
   animation-delay: var(--delay);
   animation-fill-mode: forwards;
   animation-timing-function: var(--bezierFastoutSlowin);
-  color: transparent;
+  color: transparent; /* Make sure this is intentional and set to a visible color as needed */
   transition: opacity 0.5s ease var(--durationM);
   isolation: isolate;
+  font-size: 3.5vw; /* Starts with a baseline responsive font size */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  @media (max-width: 768px) {
+    font-size: 5vw; /* Larger font size for smaller screens to enhance readability */
+  }
+
+  @media (max-width: 480px) {
+    font-size: 6vw; /* Even larger font size for very small screens like mobile phones */
+  }
 
   &::after {
     content: '';
@@ -176,6 +187,7 @@
     z-index: var(--zIndex0);
   }
 }
+
 
 @keyframes introLine {
   0% {
@@ -334,3 +346,5 @@
     opacity: 1;
   }
 }
+
+
