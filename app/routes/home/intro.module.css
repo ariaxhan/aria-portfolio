@@ -1,3 +1,23 @@
+/* Defining global variables directly in the main CSS file */
+:root {
+  --spaceL: 20px;
+  --spaceM: 16px;
+  --spaceXL: 24px;
+  --space2XL: 32px;
+  --space3XL: 48px;
+  --fontWeightMedium: 500;
+  --durationL: 0.5s;
+  --durationM: 0.3s;
+  --bezierFastoutSlowin: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --text: #333333;
+  --textLight: #666666;
+  --textTitle: #111111;
+  --accent: #ff5722;
+  --zIndex0: 0;
+  --zIndex1: 1;
+}
+
+/* Main styles with corrected media queries and variables */
 .intro {
   height: 100vh;
   display: flex;
@@ -12,19 +32,19 @@
   position: relative;
   top: calc(var(--spaceL) * -1);
 
-  @media (--mediaDesktop) {
+  @media (min-width: 1025px) {
     max-width: 920px;
   }
 
-  @media (--mediaLaptop) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     max-width: 780px;
   }
 
-  @media (--mediaMobile) {
+  @media (max-width: 480px) {
     top: calc(var(--space3XL) * -1);
   }
 
-  @media (--mediaMobileS) {
+  @media (max-width: 320px) {
     top: calc(var(--spaceXL) * -1);
   }
 
@@ -45,25 +65,20 @@
   opacity: 0;
   transition: opacity var(--durationL) var(--bezierFastoutSlowin) 0.2s;
 
-  @media (--mediaLaptop) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     font-size: calc((22 / 16) * 1rem);
     margin-bottom: var(--spaceXL);
   }
 
-  @media (--mediaTablet) {
+  @media (min-width: 481px) and (max-width: 767px) {
     font-size: calc((18 / 16) * 1rem);
   }
 
-  @media (--mediaMobile) {
+  @media (max-width: 480px) {
     margin-bottom: var(--spaceL);
     letter-spacing: 0.2em;
     white-space: nowrap;
     overflow: hidden;
-  }
-
-  @media (max-width: 820px) and (max-height: 420px) {
-    margin-bottom: var(--spaceL);
-    margin-bottom: var(--spaceXL);
   }
 
   &[data-visible='true'] {
@@ -88,11 +103,11 @@
 
 @keyframes introTextReveal {
   0% {
-    color: color-mix(in lab, var(--text) 0%, transparent);
+    color: transparent;
   }
 
   50% {
-    color: color-mix(in lab, var(--text) 0%, transparent);
+    color: transparent;
   }
 
   60% {
@@ -114,7 +129,7 @@
   animation-delay: var(--delay);
   animation-fill-mode: forwards;
   animation-timing-function: var(--bezierFastoutSlowin);
-  color: color-mix(in lab, var(--text) 0%, transparent);
+  color: transparent;
   transition: opacity 0.5s ease var(--durationM);
   isolation: isolate;
 
@@ -141,12 +156,6 @@
 
   &[data-status='entering'] {
     animation-name: introTextReveal;
-
-    @media (--mediaUseMotion) {
-      &::after:global {
-        animation-name: reveal;
-      }
-    }
   }
 
   &[data-status='entered'] {
@@ -183,7 +192,7 @@
 .line {
   content: '';
   height: 2px;
-  background: color-mix(in lab, var(--text) 30%, transparent);
+  background: var(--text);
   width: 120%;
   display: flex;
   margin-left: 20px;
@@ -197,13 +206,7 @@
   top: 0.05em;
 
   &[data-status='entering'] {
-    &:global {
-      animation-name: fade-in;
-    }
-
-    @media (--mediaUseMotion) {
-      animation-name: introLine;
-    }
+    animation-name: introLine;
   }
 
   &[data-status='entered'] {
@@ -230,7 +233,7 @@
 }
 
 .scrollIndicator {
-  border: 2px solid color-mix(in lab, var(--text) 40%, transparent);
+  border: 2px solid var(--text);
   border-radius: 20px;
   width: 26px;
   height: 38px;
@@ -245,7 +248,7 @@
     content: '';
     height: 7px;
     width: 2px;
-    background: color-mix(in lab, var(--text) 40%, transparent);
+    background: var(--text);
     border-radius: 4px;
     position: absolute;
     top: 6px;
@@ -253,7 +256,7 @@
     transform: translateX(-1px);
   }
 
-  @media (--mediaUseMotion) {
+  @media (prefers-reduced-motion: no-preference) {
     transition-property: opacity, transform;
 
     &::before {
@@ -267,13 +270,10 @@
 
   &[data-hidden='true'] {
     opacity: 0;
-
-    @media (--mediaUseMotion) {
-      transform: translate3d(0, 20px, 0);
-    }
+    transform: translate3d(0, 20px, 0);
   }
 
-  @media (--mediaTouch) {
+  @media (hover: none) and (pointer: coarse) {
     display: none;
   }
 
@@ -307,7 +307,7 @@
   transition-duration: var(--durationM);
   padding: 20px;
 
-  @media (--mediaUseMotion) {
+  @media (prefers-reduced-motion: no-preference) {
     animation-name: introMobileScrollIndicator;
     transition-property: opacity, transform;
     transform: translate3d(0, 20px, 0);
@@ -322,12 +322,12 @@
     transform: none;
   }
 
-  @media (--mediaNoTouch) {
+  @media (hover: hover) and (pointer: fine) {
     display: none;
   }
 
   & svg {
-    stroke: color-mix(in lab, var(--text) 50%, transparent);
+    stroke: var(--text);
   }
 
   &:focus-visible {

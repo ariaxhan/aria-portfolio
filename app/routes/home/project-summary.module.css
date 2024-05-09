@@ -2,31 +2,34 @@
   height: 100vh;
   width: 100%;
   max-height: 1080px;
-  padding-bottom: var(--spaceL);
+  padding-bottom: 16px; /* Adjusted from var(--spaceL) */
   margin: 120px 0;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  @media (--mediaDesktop) {
-    margin: var(--space2XL) 0;
+  /* For desktops */
+  @media (max-width: 1440px) {
+    margin: 64px 0; /* Adjusted from var(--space2XL) */
   }
 
-  @media (--mediaTablet) {
+  /* For tablets */
+  @media (max-width: 1024px) {
     height: auto;
-    margin: var(--space3XL) 0;
+    margin: 96px 0; /* Adjusted from var(--space3XL) */
   }
 
-  @media (--mediaMobile) {
-    padding-bottom: var(--space4XL);
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    padding-bottom: 64px; /* Adjusted from var(--space4XL) */
     margin-bottom: 0;
   }
 
   &[data-first='true'] {
     margin-top: 0;
 
-    @media (--mediaTablet) {
+    @media (max-width: 1024px) {
       margin-top: 0;
     }
   }
@@ -34,28 +37,28 @@
 
 .content {
   --textColumnWidth: 36%;
-
   width: 100%;
-  max-width: var(--maxWidthL);
+  max-width: 1200px; /* Adjusted from var(--maxWidthL) */
   align-items: center;
   justify-content: center;
   display: grid;
-  grid-template-columns: var(--textColumnWidth) 1fr;
-  grid-column-gap: var(--space2XL);
+  grid-template-columns: 36% 1fr; /* Adjusted to use variables directly */
+  grid-column-gap: 32px; /* Adjusted from var(--space2XL) */
 
   .summary[data-alternate='true'] & {
-    grid-template-columns: 1fr var(--textColumnWidth);
+    grid-template-columns: 1fr 36%;
   }
 
-  @media (--mediaLaptop) {
+  /* For laptops */
+  @media (max-width: 1440px) {
     --textColumnWidth: 40%;
   }
 
-  @media (--mediaTablet) {
+  /* For tablets */
+  @media (max-width: 1024px) {
     .summary[data-alternate='true'] & {
       grid-template-columns: 100%;
     }
-
     grid-template-columns: 100%;
     flex-direction: column-reverse;
     height: auto;
@@ -63,10 +66,10 @@
 }
 
 .details {
-  z-index: var(--zIndex1);
+  z-index: 1; /* Adjusted from var(--zIndex1) */
   position: relative;
 
-  @media (--mediaTablet) {
+  @media (max-width: 1024px) {
     flex: 0 0 auto;
     max-width: 410px;
     grid-row: 2;
@@ -88,9 +91,8 @@
 .model {
   --width: 180%;
   --aspectRatio: 12 / 10;
-
-  min-width: var(--width);
-  aspect-ratio: var(--aspectRatio);
+  min-width: 180%;
+  aspect-ratio: 12 / 10;
   display: grid;
   position: relative;
 
@@ -98,13 +100,13 @@
     top: 6%;
     left: 14%;
 
-    @media (--mediaDesktop) {
+    /* Adjust width for smaller screens */
+    @media (max-width: 1440px) {
       --width: 180%;
     }
 
-    @media (--mediaTablet) {
+    @media (max-width: 1024px) {
       --width: 140%;
-
       top: 10%;
       left: 0;
     }
@@ -113,26 +115,23 @@
   &[data-device='phone'] {
     --width: 116%;
     --aspectRatio: 7 / 10;
-
     top: 5%;
     left: -10%;
 
-    @media (--mediaDesktop) {
+    /* Adjust width for smaller screens */
+    @media (max-width: 1440px) {
       --width: 108%;
-
       left: 0;
     }
 
-    @media (--mediaTablet) {
+    @media (max-width: 1024px) {
       --width: 108%;
-
       left: 0;
       max-height: 60vh;
     }
 
-    @media (--mediaMobile) {
+    @media (max-width: 768px) {
       --width: 108%;
-
       left: 0;
       max-height: none;
     }
@@ -151,10 +150,10 @@
 .svg {
   opacity: 0;
   transition: opacity 1200ms ease 1400ms;
-  fill: var(--textTitle);
+  fill: #333; /* Adjusted from var(--textTitle) */
 
   &[data-visible='true'] {
-    opacity: var(--opacity);
+    opacity: 1; /* Adjusted from var(--opacity) */
   }
 
   &[data-device='laptop'] {
@@ -164,13 +163,14 @@
     bottom: 24%;
     transform: translateY(50%);
 
-    @media (--mediaTablet) {
+    /* Adjust for smaller screens */
+    @media (max-width: 1024px) {
       width: 80%;
       right: -10%;
       bottom: 18%;
     }
 
-    @media (--mediaMobile) {
+    @media (max-width: 768px) {
       right: 0;
     }
   }
@@ -182,7 +182,8 @@
     width: 100%;
     transition-delay: 800ms;
 
-    @media (--mediaTablet) {
+    /* Adjust for smaller screens */
+    @media (max-width: 1024px) {
       width: 80%;
       bottom: 23%;
     }
@@ -193,24 +194,24 @@
   position: relative;
   display: grid;
   grid-template-columns: 90px 1fr;
-  gap: var(--spaceM);
+  gap: 16px; /* Adjusted from var(--spaceM) */
   align-items: center;
-  margin-bottom: var(--spaceXL);
+  margin-bottom: 32px; /* Adjusted from var(--spaceXL) */
 }
 
 .indexNumber {
-  font-size: var(--fontSizeBodyS);
-  font-weight: var(--fontWeightMedium);
-  color: var(--primary);
+  font-size: 14px; /* Adjusted from var(--fontSizeBodyS) */
+  font-weight: 500; /* Adjusted from var(--fontWeightMedium) */
+  color: #007acc; /* Replace with your primary color */
   opacity: 0;
   transition-property: opacity;
-  transition-timing-function: var(--bezierFastoutSlowin);
-  transition-duration: var(--durationM);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
   transition-delay: 1.3s;
 
-  @media (--mediaUseMotion) {
+  @media (prefers-reduced-motion: no-preference) {
     transition-property: transform, opacity;
-    transform: translateX(calc(var(--spaceM) * -1));
+    transform: translateX(-16px); /* Adjusted from var(--spaceM) */
   }
 
   &[data-visible='true'] {
@@ -220,16 +221,13 @@
 }
 
 .title {
-  margin-bottom: var(--spaceL);
-  transition-property: opacity;
-  transition-timing-function: var(--bezierFastoutSlowin);
-  transition-duration: var(--durationXL);
-  transition-delay: var(--durationM);
+  margin-bottom: 16px; /* Adjusted from var(--spaceL) */
   opacity: 0;
+  transition: opacity 0.8s ease 0.5s;
 
-  @media (--mediaUseMotion) {
+  @media (prefers-reduced-motion: no-preference) {
     transition-property: transform, opacity;
-    transform: translate3d(0, var(--spaceL), 0);
+    transform: translateY(16px); /* Adjusted from var(--spaceL) */
   }
 
   &[data-visible='true'] {
@@ -239,16 +237,13 @@
 }
 
 .description {
-  margin-bottom: var(--spaceXL);
-  transition-property: opacity;
-  transition-timing-function: var(--bezierFastoutSlowin);
-  transition-duration: var(--durationXL);
-  transition-delay: var(--durationL);
+  margin-bottom: 32px; /* Adjusted from var(--spaceXL) */
   opacity: 0;
+  transition: opacity 0.8s ease 0.8s;
 
-  @media (--mediaUseMotion) {
+  @media (prefers-reduced-motion: no-preference) {
     transition-property: transform, opacity;
-    transform: translate3d(0, var(--spaceL), 0);
+    transform: translateY(16px); /* Adjusted from var(--spaceL) */
   }
 
   &[data-visible='true'] {
@@ -258,16 +253,12 @@
 }
 
 .button {
-  transition-property: opacity;
-  transition-timing-function: var(--bezierFastoutSlowin);
-  transition-duration: var(--durationXL);
-  transition-delay: var(--durationXL);
-  transform: translate3d(0, var(--spaceL), 0);
   opacity: 0;
+  transition: opacity 0.8s ease 1.2s;
 
-  @media (--mediaUseMotion) {
+  @media (prefers-reduced-motion: no-preference) {
     transition-property: transform, opacity;
-    transform: translate3d(0, var(--spaceL), 0);
+    transform: translateY(16px); /* Adjusted from var(--spaceL) */
   }
 
   &[data-visible='true'] {
