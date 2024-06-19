@@ -1,3 +1,5 @@
+import blossom1 from '~/assets/blossom1.png';
+import blossom2 from '~/assets/blossom2.png';
 import hotAgentsTexture from '~/assets/hotagents.png';
 import melodyTexture from '~/assets/moodishmelodies.png';
 import resonateTexture from '~/assets/resonate.png';
@@ -138,11 +140,37 @@ export const Home = () => {
         }}
       />
 
-      <ProjectSummary
+       <ProjectSummary
         id="project-3"
+        alternate
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
+        title="blossom, an AI skills and therapy app"
+        description="An app that helps people with mental health issues to learn new skills and improve their mental health with an AI therapist."
+        buttonText="View website"
+        buttonLink="https://github.com/ariaxhan/blossom"
+        model={{
+          type: 'phone',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: `${blossom1} 375w, ${blossom1} 750w`,
+              placeholder: blossom1,
+            },
+            {
+              srcSet: `${blossom2} 375w, ${blossom2} 750w`,
+              placeholder: blossom2,
+            },
+          ],
+        }}
+      />
+
+      <ProjectSummary
+        id="project-4"
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
         title="AI Powered Journaling App"
         description="Resonate is an innovative, AI powered journaling site designed to help users analyze their journal entries and display them in a visual and meaningful way."
         buttonText="View project"
