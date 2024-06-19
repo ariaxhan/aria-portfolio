@@ -1,6 +1,6 @@
-import bookBlogTexture from '~/assets/bookblog.png';
 import hotAgentsTexture from '~/assets/hotagents.png';
 import melodyTexture from '~/assets/moodishmelodies.png';
+import resonateTexture from '~/assets/resonate.png';
 
 import { useEffect, useRef, useState } from 'react';
 import { Footer } from '~/components/footer';
@@ -121,7 +121,7 @@ export const Home = () => {
         alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
-        index={1}
+        index={2}
         title="A Hotkey Powered AI Assistant"
         description="Created a productivity tool that uses a hotkey-triggered AI agent to automate tasks like content explanation, drafting responses, code creation, and proofreading by analyzing your desktop screenshot."
         buttonText="View project"
@@ -143,17 +143,17 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Horror book blog with Astro"
-        description="Created a personal book blog about horror novels using Astro, a static site generator for modern web development, and tailwindcss for lightweight styling"
+        title="AI Powered Journaling App"
+        description="Resonate is an innovative, AI powered journaling site designed to help users analyze their journal entries and display them in a visual and meaningful way."
         buttonText="View project"
-        buttonLink="https://github.com/ariaxhan/sanity-books"
+        buttonLink="https://github.com/kev-bacon/resonate"
         model={{
           type: 'laptop',
-          alt: 'Sanity book blog for horror enthusiasts',
+          alt: 'Resonate, an AI-Powered Journaling App',
           textures: [
             {
-              srcSet: `${bookBlogTexture} 800w, ${bookBlogTexture} 1920w`,
-              placeholder: bookBlogTexture,
+              srcSet: `${resonateTexture} 800w, ${resonateTexture} 1920w`,
+              placeholder: resonateTexture,
             },
           ],
         }}
