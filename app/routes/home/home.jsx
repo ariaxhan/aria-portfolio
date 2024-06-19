@@ -146,9 +146,9 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="blossom, an AI skills and therapy app"
+        title="Blossom, an AI skills and therapy app"
         description="An app that helps people with mental health issues to learn new skills and improve their mental health with an AI therapist."
-        buttonText="View website"
+        buttonText="View project"
         buttonLink="https://github.com/ariaxhan/blossom"
         model={{
           type: 'phone',
@@ -167,9 +167,9 @@ export const Home = () => {
       />
 
       <ProjectSummary
-        id="project-4"
-        sectionRef={projectFour}
-        visible={visibleSections.includes(projectFour.current)}
+        id="project-3"
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
         index={4}
         title="AI Powered Journaling App"
         description="Resonate is an innovative, AI powered journaling site designed to help users analyze their journal entries and display them in a visual and meaningful way."
