@@ -1,15 +1,15 @@
-import blockchainTexture from '~/assets/blockchain.png';
-import melodyTexture from '~/assets/moodishmelodies.png';
 import bookBlogTexture from '~/assets/bookblog.png';
+import hotAgentsTexture from '~/assets/hotagents.png';
+import melodyTexture from '~/assets/moodishmelodies.png';
 
+import { useEffect, useRef, useState } from 'react';
 import { Footer } from '~/components/footer';
+import config from '~/config.json';
 import { baseMeta } from '~/utils/meta';
+import styles from './home.module.css';
 import { Intro } from './intro';
 import { Profile } from './profile';
 import { ProjectSummary } from './project-summary';
-import { useEffect, useRef, useState } from 'react';
-import config from '~/config.json';
-import styles from './home.module.css';
 
 // Prefetch draco decoader wasm
 export const links = () => {
@@ -122,17 +122,17 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={1}
-        title="A blockchain built with Python"
-        description="Created a blockchain with Python and Flask, implementing css, html, and javascript for the front-end"
+        title="A Hotkey Powered AI Assistant"
+        description="Created a productivity tool that uses a hotkey-triggered AI agent to automate tasks like content explanation, drafting responses, code creation, and proofreading by analyzing your desktop screenshot."
         buttonText="View project"
-        buttonLink="https://github.com/ariaxhan/customBlockchain"
+        buttonLink="https://github.com/ariaxhan/hotagents"
         model={{
           type: 'laptop',
-          alt: 'Python Blockchainr',
+          alt: 'Hot Agents',
           textures: [
             {
-              srcSet: `${blockchainTexture} 1280w, ${blockchainTexture} 2560w`,
-              placeholder: blockchainTexture,
+              srcSet: `${hotAgentsTexture} 1280w, ${hotAgentsTexture} 2560w`,
+              placeholder: hotAgentsTexture,
             },
           ],
         }}

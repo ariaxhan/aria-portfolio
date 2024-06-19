@@ -21,18 +21,17 @@ const ProfileText = ({ visible, titleId }) => (
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       Hi, I'm Aria! I'm a Computer Science student at the University of San Francisco, and I'm fascinated by the
-      intersection of software development, data privacy, and cybersecurity. I'm on track to graduate in May 2025, and
+      intersection of software development and artificial intelligence. I'm on track to graduate in May 2025, and
       I'm eager to apply my skills and knowledge in real-world settings. Currently I'm looking for an internship for
       Summer 2024 or Winter 2024.
       <br /> <br />
-      My projects, such as a custom Python blockchain, Java-based search engine and a Spotify-integrated web app, reflect my ability to turn data
-      into creative, user-centric solutions. Check out my <Link href="https://github.com/ariaxhan">Github</Link> to see
+      My projects, such as an AI-powered journaling site, a hotkey powered AI assistant, and a Spotify-integrated web app, reflect my ability to turn data into creative, user-centric solutions. Check out my <Link href="https://github.com/ariaxhan">Github</Link> to see
       everything I've built, and if you’re interested in the coding languages and platforms I use, take a look at
       my <Link href="/uses">Skills &
       Tools</Link> page.
       <br /> <br />
       I'm excited about opportunities where I can merge my technical abilities, creative thinking, and passion for
-      software engineering and cybersecurity. Please feel free to reach out and connect!
+      software engineering and artifical intelligence. Please feel free to reach out and connect!
       <br />
       <br />
       Email me at <Link href="mailto:ariaxhan@gmail.com">ariaxhan@gmail.com</Link> or check out my <Link
