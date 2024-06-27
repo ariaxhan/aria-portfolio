@@ -62,6 +62,9 @@ export const Uses = () => {
                   <ListItem>
                     <b> SQL </b>: I'm currently learning SQL, and have experience working with MongoDB, but am working to gain a better understanding of SQL and integrate it into a website.
                   </ListItem>
+                   <ListItem>
+                    <b> Swift </b>: I recently built an app with Swift and Firebase, and I'm learning more about Swift and its ecosystem.
+                  </ListItem>
                 </List>
               </ProjectSectionText>
             </ProjectTextRow>
@@ -92,7 +95,10 @@ export const Uses = () => {
                     <b> Cloudfare </b>: I've been working on deploying all of my sites through Cloudfare Pages, and am in the process of learning how to use Cloudfare Workers. This page is deployed through Cloudfare Pages!
                   </ListItem>
                   <ListItem>
-                    <b> Firebase </b>: I created a React website during my internship in Korea, connecting it to a Firebase backend for database storage functionality.
+                    <b> Firebase </b>: I created a React website during my internship in Korea, connecting it to a Firebase backend for database storage functionality. I've also used it to power several of my projects.
+                  </ListItem>
+                    <ListItem>
+                    <b> XCode </b>: Used XCode to create an iOS mental health app with AI powered lessons and a chatbot.
                   </ListItem>
                 </List>
               </ProjectSectionText>

@@ -25,7 +25,10 @@ const ProfileText = ({ visible, titleId }) => (
       I'm eager to apply my skills and knowledge in real-world settings. Currently I'm looking for an internship for
       Summer 2024 or Winter 2024.
       <br /> <br />
-      My projects, such as an AI-powered journaling site, a hotkey powered AI assistant, and a Spotify-integrated web app, reflect my ability to turn data into creative, user-centric solutions. Check out my <Link href="https://github.com/ariaxhan">Github</Link> to see
+      My latest projects, an AI-powered itinerary generator, an AI skills and therapy app, and a hotkey-powered AI assistant, demonstrate my innovative approach to developing user-centric, AI-driven solutions that enhance user experience and productivity.
+      <br />
+      <br />
+      Check out my <Link href="https://github.com/ariaxhan">Github</Link> to see
       everything I've built, and if you’re interested in the coding languages and platforms I use, take a look at
       my <Link href="/uses">Skills &
       Tools</Link> page.
