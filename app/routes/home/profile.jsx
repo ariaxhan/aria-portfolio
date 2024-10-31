@@ -1,4 +1,3 @@
-
 import profileImgPlaceholder from '~/assets/profile-placeholder.jpg';
 import profileImg from '~/assets/aria.jpg';
 import { Button } from '~/components/button';
@@ -20,25 +19,34 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Hi, I'm Aria! I'm a Computer Science student at the University of San Francisco, and I'm fascinated by the
-      intersection of software development and artificial intelligence. I'm on track to graduate in May 2025, and
-      I'm eager to apply my skills and knowledge in real-world settings. Currently I'm looking for an internship for
-      Summer 2024 or Winter 2024.
+      Hi, I'm Aria! I’m a Computer Science student at the University of San Francisco,
+      graduating in May 2025, with a strong passion for coding, artificial intelligence,
+      and developing solutions that bring people closer to technology in ways that feel
+      both powerful and effortless.
       <br /> <br />
-      My latest projects, an AI-powered itinerary generator, an AI skills and therapy app, and a hotkey-powered AI assistant, demonstrate my innovative approach to developing user-centric, AI-driven solutions that enhance user experience and productivity.
-      <br />
-      <br />
+      For me, programming isn’t just about writing code—it’s about creating experiences
+      that resonate with users, solving real-world challenges, and exploring the evolving
+      relationship between humans and AI.
+      <br /> <br />
+      Right now, I'm working on projects like TheraVoice, an AI-powered therapy agent
+      designed to offer empathetic support in a natural, conversational way. Each of my
+      projects represent a piece of my broader commitment to enhancing ease of use,
+      accessibility, and meaningful interaction with technology. I believe that, with the
+      right approach, AI and software can make life smoother, support personal growth, and
+      even spark creativity in everyday experiences.
+      <br /> <br />
       Check out my <Link href="https://github.com/ariaxhan">Github</Link> to see
-      everything I've built, and if you’re interested in the coding languages and platforms I use, take a look at
-      my <Link href="/uses">Skills &
-      Tools</Link> page.
+      everything I've built, and if you’re interested in the coding languages and
+      platforms I use, take a look at my <Link href="/uses">Skills & Tools</Link> page.
       <br /> <br />
-      I'm excited about opportunities where I can merge my technical abilities, creative thinking, and passion for
-      software engineering and artifical intelligence. Please feel free to reach out and connect!
+      I'm excited about opportunities where I can merge my technical abilities, creative
+      thinking, and passion for software engineering and artifical intelligence. Please
+      feel free to reach out and connect!
       <br />
       <br />
-      Email me at <Link href="mailto:ariaxhan@gmail.com">ariaxhan@gmail.com</Link> or check out my <Link
-      href="https://www.linkedin.com/in/ariahan/">LinkedIn</Link> for more information.
+      Email me at <Link href="mailto:ariaxhan@gmail.com">ariaxhan@gmail.com</Link> or
+      check out my <Link href="https://www.linkedin.com/in/ariahan/">LinkedIn</Link> for
+      more information.
       <br /> <br />
     </Text>
   </Fragment>
@@ -88,8 +96,11 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Me touching some grass"
                 />
-                <svg className={styles.svg} data-visible={visible} viewBox="0 0 136 766">
-                </svg>
+                <svg
+                  className={styles.svg}
+                  data-visible={visible}
+                  viewBox="0 0 136 766"
+                ></svg>
               </div>
             </div>
           </div>
