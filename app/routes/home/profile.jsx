@@ -1,4 +1,3 @@
-
 import profileImgPlaceholder from '~/assets/profile-placeholder.jpg';
 import profileImg from '~/assets/aria.jpg';
 import { Button } from '~/components/button';
@@ -20,22 +19,27 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Hi, I'm Aria! I'm a Computer Science student at the University of San Francisco, and I'm fascinated by the
-      intersection of software development and artificial intelligence. I'm on track to graduate in May 2025, and
-      I'm eager to apply my skills and knowledge in real-world settings. Currently I'm looking for an internship for
-      Summer 2024 or Winter 2024.
+      Hi, I'm Aria! I'm a Computer Science student at the University of San Francisco,
+      captivated by the intersection of software development and artificial intelligence.
+      Given recent changes in my academic path, I’m currently seeking full-time Software
+      Engineering roles where I can apply my skills and knowledge immediately in
+      real-world settings.
       <br /> <br />
-      My projects, such as an AI-powered journaling site, a hotkey powered AI assistant, and a Spotify-integrated web app, reflect my ability to turn data into creative, user-centric solutions. Check out my <Link href="https://github.com/ariaxhan">Github</Link> to see
-      everything I've built, and if you’re interested in the coding languages and platforms I use, take a look at
-      my <Link href="/uses">Skills &
-      Tools</Link> page.
+      My projects, such as an AI-powered journaling site, a hotkey powered AI assistant,
+      and a Spotify-integrated web app, reflect my ability to turn data into creative,
+      user-centric solutions. Check out my{' '}
+      <Link href="https://github.com/ariaxhan">Github</Link> to see everything I've built,
+      and if you’re interested in the coding languages and platforms I use, take a look at
+      my <Link href="/uses">Skills & Tools</Link> page.
       <br /> <br />
-      I'm excited about opportunities where I can merge my technical abilities, creative thinking, and passion for
-      software engineering and artifical intelligence. Please feel free to reach out and connect!
+      I'm excited about opportunities where I can merge my technical abilities, creative
+      thinking, and passion for software engineering and artifical intelligence. Please
+      feel free to reach out and connect!
       <br />
       <br />
-      Email me at <Link href="mailto:ariaxhan@gmail.com">ariaxhan@gmail.com</Link> or check out my <Link
-      href="https://www.linkedin.com/in/ariahan/">LinkedIn</Link> for more information.
+      Email me at <Link href="mailto:ariaxhan@gmail.com">ariaxhan@gmail.com</Link> or
+      check out my <Link href="https://www.linkedin.com/in/ariahan/">LinkedIn</Link> for
+      more information.
       <br /> <br />
     </Text>
   </Fragment>
@@ -85,8 +89,11 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Me touching some grass"
                 />
-                <svg className={styles.svg} data-visible={visible} viewBox="0 0 136 766">
-                </svg>
+                <svg
+                  className={styles.svg}
+                  data-visible={visible}
+                  viewBox="0 0 136 766"
+                ></svg>
               </div>
             </div>
           </div>
