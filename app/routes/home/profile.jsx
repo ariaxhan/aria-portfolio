@@ -16,21 +16,21 @@ import styles from './profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="Hey there," start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Hi, I'm Aria! I'm a Computer Science student at the University of San Francisco,
-      captivated by the intersection of software development and artificial intelligence.
-      Given recent changes in my academic path, I’m currently seeking full-time Software
-      Engineering roles where I can apply my skills and knowledge immediately in
-      real-world settings.
+      I'm Aria! I build software, experiment with AI, and write poetry when the code won't
+      compile.
       <br /> <br />
-      My projects, such as an AI-powered journaling site, a hotkey powered AI assistant,
-      and a Spotify-integrated web app, reflect my ability to turn data into creative,
-      user-centric solutions. Check out my{' '}
-      <Link href="https://github.com/ariaxhan">Github</Link> to see everything I've built,
-      and if you’re interested in the coding languages and platforms I use, take a look at
-      my <Link href="/uses">Skills & Tools</Link> page.
+      I’m currently seeking full-time Software Engineering roles where I can apply my
+      skills and knowledge immediately in real-world settings.
+      <br /> <br />
+      For me, coding is a way to explore and push the boundaries of what's possible,
+      making advanced technology feel personal and accessible.
+      <br /> <br />
+      Check out my <Link href="https://github.com/ariaxhan">Github</Link> to see
+      everything I've built, and if you’re interested in the coding languages and
+      platforms I use, take a look at my <Link href="/uses">Skills & Tools</Link> page.
       <br /> <br />
       I'm excited about opportunities where I can merge my technical abilities, creative
       thinking, and passion for software engineering and artifical intelligence. Please

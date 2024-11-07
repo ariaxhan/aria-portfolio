@@ -18,7 +18,8 @@ import styles from './uses.module.css';
 export const meta = () => {
   return baseMeta({
     title: 'Skills',
-    description: 'My technical skills and the tools I use to build things.',
+    description:
+      'A snapshot of my technical expertise, shaped by real-world projects and continuous learning.',
   });
 };
 
@@ -33,75 +34,132 @@ export const Uses = () => {
         />
         <ProjectHeader
           title="Skills & Tools"
-          description="A somewhat comprehensive list of coding languages, frameworks, platforms, and more that I use to build and code things."
+          description="A snapshot of my technical expertise, shaped by real-world projects and continuous learning."
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
-              <ProjectSectionHeading>Coding Languages</ProjectSectionHeading>
+              <ProjectSectionHeading>AI & Machine Learning</ProjectSectionHeading>
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    <b> Java </b>: coding language that I am most familiar with. I've used it to create an elevator simulation program and am now building a multi-threaded, web-scraping custom search engine.
+                    <b>Large Language Models</b>: Strong foundation in AI architectures
+                    and principles through academic study, with hands-on experience
+                    implementing LLMs and agentic systems.
                   </ListItem>
                   <ListItem>
-                    <b> Python </b>: my first coding language and remains a top choice. I recently made a blockchain from scratch using Python, and I've also taught a course on it to middle schoolers.
-                  </ListItem>
-                  <ListItem>
-                    <b> C </b>: another language that I am quite familiar with. I designed my own socket and basic http server using C, as well as a RISC-V simulator.
-                  </ListItem>
-                  <ListItem>
-                    <b> Javascript/Typescript </b>: I've used Javascript to create a simple web app that uses the Spotify API to analyze the mood of a song, and I've worked with both Javascript and Typescript in multiple web frameworks including React and Vue.js.
-                  </ListItem>
-                  <ListItem>
-                    <b> R & RStudio </b>: I used R for data analysis and visualization in RStudio. I've created a project that analyzes the lyrics of all of the songs from the K-pop group Blackpink and displays the data in multiple ways.
-                  </ListItem>
-                  <ListItem>
-                    <b> HTML/CSS </b>: I've used HTML/CSS to create multiple webpages and have a good understanding of both.
-                  </ListItem>
-                  <ListItem>
-                    <b> SQL </b>: I'm currently learning SQL, and have experience working with MongoDB, but am working to gain a better understanding of SQL and integrate it into a website.
+                    <b>Rapid AI Development</b>: Built two hackathon-winning applications,
+                    Freetime (AI social planning platform, Wordware Prize) and
+                    TheraVoice/brink (biometric AI therapy, AI/ML API Prize).
                   </ListItem>
                 </List>
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
+
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
-              <ProjectSectionHeading>Development</ProjectSectionHeading>
+              <ProjectSectionHeading>Core Engineering</ProjectSectionHeading>
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    <b> Unity </b>: I've used Unity to create a simple game where the player climbs a pyramid collecting coins.
+                    <b>Python</b>: My first coding language (surprise). Taught
+                    fundamentals to middle school students.
                   </ListItem>
                   <ListItem>
-                    <b> React </b>: I've made several webpages with React, including this one!
+                    <b>R</b>: Started alongside Python, using RStudio for data analysis.
+                    Created visualizations exploring linguistic patterns in K-pop lyrics.
+                    Recently used to explore random forest predictions and clustering
+                    algorithms.
                   </ListItem>
                   <ListItem>
-                    <b> Vue.js </b>: I've worked with Vue.js quite a bit, especially by converting a webpage from Vue.js to React, which required a deep understanding of both frameworks.
+                    <b>C</b>: Built network systems from the ground up, including a custom
+                    HTTP server and RISC-V simulator.
                   </ListItem>
                   <ListItem>
-                    <b> Flask </b>: I used Flask to create and launch a blockchain from scratch.
+                    <b>JavaScript/TypeScript</b>: Crafted a Spotify mood analyzer and
+                    various full-stack web applications. Built modular interfaces at
+                    Qiri.ai using modern frameworks.
                   </ListItem>
                   <ListItem>
-                    <b> Tableau </b>: My very first CS related class was Data Science, which I took in Italy, and there I learned how to use Tableau and created visualizations of data.
+                    <b>Swift</b>: Created iOS apps integrating biometrics and voice
+                    features for mental health support.
                   </ListItem>
                   <ListItem>
-                    <b> Cloudfare </b>: I've been working on deploying all of my sites through Cloudfare Pages, and am in the process of learning how to use Cloudfare Workers. This page is deployed through Cloudfare Pages!
-                  </ListItem>
-                  <ListItem>
-                    <b> Firebase </b>: I created a React website during my internship in Korea, connecting it to a Firebase backend for database storage functionality.
+                    <b>Java</b>: Used to create everything from a multi-threaded web
+                    scraper to an elevator simulation system. My go-to language for
+                    complex systems.
                   </ListItem>
                 </List>
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
-
-          ... and I am always learning more!
         </ProjectSection>
 
+        <ProjectSection padding="none" className={styles.section}>
+          <ProjectSectionContent>
+            <ProjectTextRow width="m">
+              <ProjectSectionHeading>Web Development & Design</ProjectSectionHeading>
+              <ProjectSectionText as="div">
+                <List>
+                  <ListItem>
+                    <b>Figma to Code</b>: Expertise in turning Figma designs into clean,
+                    responsive interfaces.
+                  </ListItem>
+                  <ListItem>
+                    <b>React & Vue.js</b>: Deep understanding of both frameworks through
+                    challenging projects, including migrating an entire enterprise site
+                    from Vue to React while improving performance.
+                  </ListItem>
+                </List>
+              </ProjectSectionText>
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
+
+        <ProjectSection padding="none" className={styles.section}>
+          <ProjectSectionContent>
+            <ProjectTextRow width="m">
+              <ProjectSectionHeading>Cloud</ProjectSectionHeading>
+              <ProjectSectionText as="div">
+                <List>
+                  <ListItem>
+                    <b>Google Cloud</b>: My current cloud provider of choice. I've worked
+                    primarily with authentication, AI APIs and tools, and serverless
+                    functions.
+                  </ListItem>
+                  <ListItem>
+                    <b>Cloudflare</b>: My go-to quick deployment method. This page is
+                    deployed through Cloudfare Pages!
+                  </ListItem>
+                  <ListItem>
+                    <b>AWS</b>: Another cloud provider I've worked with, primarily with
+                    EC2, Elastic Beanstalk, VPC, and S3.
+                  </ListItem>
+                </List>
+              </ProjectSectionText>
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
+
+        <ProjectSection padding="none" className={styles.section}>
+          <ProjectSectionContent>
+            <ProjectTextRow width="m">
+              <ProjectSectionHeading>Game Development</ProjectSectionHeading>
+              <ProjectSectionText as="div">
+                <List>
+                  <ListItem>
+                    <b>Unity</b>: Took a Game Design with Unity class and built an
+                    interactive 3D game featuring coin collection and pyramid climbing
+                    mechanics.
+                  </ListItem>
+                </List>
+              </ProjectSectionText>
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
       </ProjectContainer>
       <Footer />
     </>
