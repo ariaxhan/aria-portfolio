@@ -1,17 +1,16 @@
+import { Link as RouterLink, useLocation } from '@remix-run/react';
+import { useEffect, useRef, useState } from 'react';
 import { Icon } from '~/components/icon';
-import { Monogram } from '~/components/monogram';
 import { useTheme } from '~/components/theme-provider';
 import { tokens } from '~/components/theme-provider/theme';
 import { Transition } from '~/components/transition';
-import { useScrollToHash, useWindowSize } from '~/hooks';
-import { Link as RouterLink, useLocation } from '@remix-run/react';
-import { useEffect, useRef, useState } from 'react';
-import { cssProps, media, msToNum, numToMs } from '~/utils/style';
-import { NavToggle } from './nav-toggle';
-import { ThemeToggle } from './theme-toggle';
-import { navLinks, socialLinks } from './nav-data';
 import config from '~/config.json';
+import { useScrollToHash, useWindowSize } from '~/hooks';
+import { cssProps, media, msToNum, numToMs } from '~/utils/style';
+import { navLinks, socialLinks } from './nav-data';
+import { NavToggle } from './nav-toggle';
 import styles from './navbar.module.css';
+import { ThemeToggle } from './theme-toggle';
 
 export const Navbar = () => {
   const [current, setCurrent] = useState();
@@ -150,7 +149,6 @@ export const Navbar = () => {
         aria-label={`${config.name}, ${config.role}`}
         onClick={handleMobileNavClick}
       >
-        <Monogram highlight />
       </RouterLink>
       <NavToggle onClick={() => setMenuOpen(!menuOpen)} menuOpen={menuOpen} />
       <nav className={styles.nav}>

@@ -29,6 +29,8 @@
     position: relative;
     padding: var(--spaceS) var(--spaceS) var(--spaceL);
     z-index: var(--zIndex2);
+    width: var(--space2XL);
+    height: var(--space2XL);
 
     @media (--mediaMobile) {
       padding-bottom: var(--spaceS);
@@ -232,4 +234,5 @@
       transform: none;
     }
   }
+
 }
