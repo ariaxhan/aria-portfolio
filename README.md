@@ -4,7 +4,7 @@
 
 # Aria's Portfolio Website
 
-Hi there! Welcome to my portfolio. Here, I'll be sharing my skills and projects in the field of Computer Science. <br/>
+This is my old portfolio. My new one is at ariaxhan.com
 
 <h1 align="center">Personal portfolio</h1>
 
